@@ -1,0 +1,19 @@
+{
+  "name": "vit-semester-results",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "client"
+  ],
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "start": "node scripts/dev.js --prod",
+    "build": "npm run build -w client",
+    "test": "node scripts/dev.js --test",
+    "reset-db": "node scripts/dev.js --reset"
+  },
+  "type": "module",
+  "devDependencies": {
+    "pg": "^8.23.0"
+  }
+}
